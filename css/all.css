@@ -170,48 +170,6 @@ textarea:focus {
   outline: none;
 }
 
-.d-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.justify-content-between {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.justify-content-center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.justify-content-end {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.align-items-center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.align-self-end {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-.flex-column {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -219,6 +177,12 @@ textarea:focus {
 
 .header {
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   background-color: #f7f7f7;
 }
 
@@ -226,6 +190,15 @@ textarea:focus {
   margin-right: 4px;
   -webkit-transition: .4s;
   transition: .4s;
+}
+
+.header a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header a:hover img {
@@ -254,20 +227,35 @@ textarea:focus {
 }
 
 .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-weight: bold;
 }
 
-.navbar li + li {
+.menu li + li {
   margin-left: 24px;
 }
 
-.navbar a {
+.menu a {
   padding: 20px 8px;
   color: #00cc99;
   position: relative;
 }
 
-.navbar a::after {
+.menu a::after {
   content: '';
   position: absolute;
   left: 0;
@@ -275,11 +263,11 @@ textarea:focus {
   height: 4px;
   bottom: 0;
   background-color: #00cc99;
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-.navbar a.active::after, .navbar a:hover::after {
+.menu a.active::after, .menu a:hover::after {
   right: 0;
 }
 
@@ -302,6 +290,12 @@ textarea:focus {
 }
 
 .course-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
   margin-bottom: 54px;
 }
@@ -316,6 +310,15 @@ textarea:focus {
 
 .course-img {
   height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .course-title {
@@ -380,6 +383,15 @@ textarea:focus {
   color: white;
 }
 
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .contact-form,
 .contact textarea {
   width: 48%;
@@ -389,6 +401,19 @@ textarea:focus {
 .contact input {
   padding: 8px;
   border-radius: 3px;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contact input {
@@ -406,6 +431,8 @@ textarea:focus {
   color: white;
   background-color: #00cc99;
   border-radius: 3px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .contact button:hover {
@@ -414,16 +441,25 @@ textarea:focus {
 
 .footer {
   padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer a {
-  color: #e12d80;
+  color: #00cc99;
   padding: 4px 0;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
 .footer a:hover {
-  color: #00cc99;
+  color: #e12d80;
 }
 /*# sourceMappingURL=all.css.map */
